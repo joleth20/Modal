@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style -->
+    <link rel="stylesheet" href="./modal.css">
+    <!-- w3school -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Modal Using HTML | CSS | JS</title>
+</head>
+<body>
+    <!-- Modal Structure -->
+     <section class="modal-container">
+        <button type="button" id="show-button" class="show-button" title="Click this button to show the modal">Click button to show modal</button>
+        
+         <!-- Dialog tag: don't use any of these layouts, such as flex or grid, instead use position layout when you try to move this tag--> 
+        <dialog  id="modal-content" class="modal-content">
+            <div class="title">
+                <h1>LOGIN</h1>
+                <button type="button" id="close-modal" class="button-close" title="Click this if you want to close the modal"><i class="fa fa-close"></i></button>
+            </div>
+            <form action="">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="button-submit">Submit</button>
+            </form>
+        </dialog>
+        <!-- End Diaglog -->
+     </section>
+
+
+    <!-- js -->
+    <script src="./modal.js"></script>
+</body>
+</html>
