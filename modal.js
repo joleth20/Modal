@@ -4,7 +4,6 @@ const closeModal = document.querySelector('#close-modal');
 
 showButton.addEventListener('click', () => {
     modalContent.show(); // Use showModal() to display the dialog
-    document.body.style.overlow = 'hidden';
 });
 
 closeModal.addEventListener('click', () => {
